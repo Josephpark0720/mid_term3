@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+<div class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="lead">
+            <h>Welcome!</h>
+        </p>
+        <form action="/" method="GET" class="form-inline">
+            {% for i in data %}
+            <p><a href="post.html">{{ i.title }} {{ i.name }} {{ i.content }}</a></p>
+            {% endfor %}
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

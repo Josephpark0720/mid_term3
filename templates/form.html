@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+<div class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form action="/form" method="post" class="form-inline">
+        <p>Title<br><input type="text" class="form-control" id="title" name="title" placeholder="Title" required="required"></p>
+        <p>Name<br><input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required"></p>
+        <p>Content<br><input type="text" class="form-control" id="title" name="title" placeholder="Title"required="required"></p>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
